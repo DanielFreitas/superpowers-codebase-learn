@@ -1,0 +1,70 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#041226"/><stop offset="0.6" stop-color="#080B28"/><stop offset="1" stop-color="#140B33"/>
+    </linearGradient>
+    <linearGradient id="headline" x1="80" y1="0" x2="1100" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#14D8FF"/><stop offset="1" stop-color="#BB60FF"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#17D8FF"/><stop offset="1" stop-color="#B65FFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <!-- HEADER: title y=106 subtitle y=164 — content starts y=228 -->
+  <text x="80" y="106" fill="white" font-size="76" font-weight="800" font-family="Segoe UI,Arial,sans-serif">Execução com contexto contínuo.</text>
+  <text x="80" y="164" fill="url(#headline)" font-size="38" font-weight="700" font-family="Segoe UI,Arial,sans-serif">Planejar, implementar, validar e capturar continuamente.</text>
+
+  <!-- COLUMN A: skills stack (x=80–460) 4 boxes -->
+  <!-- box 1 brainstorming y=228–356 (h=128) text y=300 -->
+  <rect x="80" y="228" width="380" height="128" rx="24" fill="#0E1530" stroke="#1FD8FF" stroke-width="2"/>
+  <text x="122" y="300" fill="#FFFFFF" font-size="32" font-weight="700" font-family="Segoe UI,Arial,sans-serif">brainstorming</text>
+  <!-- box 2 writing plans y=372–500 text y=444 -->
+  <rect x="80" y="372" width="380" height="128" rx="24" fill="#0E1530" stroke="#1FD8FF" stroke-width="2"/>
+  <text x="122" y="444" fill="#FFFFFF" font-size="32" font-weight="700" font-family="Segoe UI,Arial,sans-serif">writing plans</text>
+  <!-- box 3 executing y=516–644 text y=588 -->
+  <rect x="80" y="516" width="380" height="128" rx="24" fill="#0E1530" stroke="#1FD8FF" stroke-width="2"/>
+  <text x="122" y="588" fill="#FFFFFF" font-size="32" font-weight="700" font-family="Segoe UI,Arial,sans-serif">executing</text>
+  <!-- box 4 testing + review y=660–788 text y=732 -->
+  <rect x="80" y="660" width="380" height="128" rx="24" fill="#0E1530" stroke="#8D5DFF" stroke-width="2"/>
+  <text x="122" y="732" fill="#FFFFFF" font-size="32" font-weight="700" font-family="Segoe UI,Arial,sans-serif">testing + review</text>
+
+  <!-- CENTER: agent circle cx=790 cy=528 r=110 — gap to col-A (x=460): 220px -->
+  <circle cx="790" cy="528" r="110" fill="#11162D" stroke="#7F63FF" stroke-width="6"/>
+  <circle cx="790" cy="528" r="138" stroke="#1BD8FF" stroke-opacity="0.14" stroke-width="2"/>
+  <circle cx="766" cy="522" r="13" fill="#4CE2FF"/>
+  <circle cx="814" cy="522" r="13" fill="#4CE2FF"/>
+  <rect x="774" y="562" width="72" height="10" rx="6" fill="#A45FFF"/>
+  <!-- connectors left -->
+  <path d="M460 292C570 292 620 428 680 468" stroke="url(#beam)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M460 436C570 436 640 500 680 518" stroke="url(#beam)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M460 580C570 580 640 556 680 546" stroke="url(#beam)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M460 724C570 724 620 632 680 588" stroke="url(#beam)" stroke-width="4" stroke-linecap="round"/>
+  <!-- connectors right -->
+  <path d="M900 498C960 498 1000 400 1080 388" stroke="url(#beam)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M900 528C960 528 1000 528 1080 528" stroke="url(#beam)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M900 558C960 558 1000 656 1080 664" stroke="url(#beam)" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- COLUMN C: capture panel (x=1080–1520) — gap to circle: 170px -->
+  <!-- /learn-capture button y=228–318 (h=90) text y=282 -->
+  <rect x="1080" y="228" width="440" height="90" rx="24" fill="#131731" stroke="#785DFF" stroke-width="2"/>
+  <text x="1300" y="282" text-anchor="middle" fill="#FFFFFF" font-size="30" font-weight="700" font-family="Segoe UI,Arial,sans-serif">/learn-capture</text>
+  <!-- inbox panel y=334–788 (h=454) -->
+  <rect x="1080" y="334" width="440" height="454" rx="26" fill="#12162F" stroke="#905CFF" stroke-width="2"/>
+  <!-- title y=378 (34px from panel top, gap=44px) -->
+  <text x="1122" y="378" fill="#F6FAFF" font-size="28" font-weight="700" font-family="Segoe UI,Arial,sans-serif">inbox.md</text>
+  <!-- row 1 y=400–462 (h=62) text y=437 -->
+  <rect x="1118" y="400" width="364" height="62" rx="16" fill="#151A34" stroke="#283A79" stroke-width="1.5"/>
+  <text x="1156" y="437" fill="#FFFFFF" font-size="24" font-family="Segoe UI,Arial,sans-serif">nova convenção</text>
+  <!-- row 2 y=478–540 text y=515 -->
+  <rect x="1118" y="478" width="364" height="62" rx="16" fill="#151A34" stroke="#283A79" stroke-width="1.5"/>
+  <text x="1156" y="515" fill="#FFFFFF" font-size="24" font-family="Segoe UI,Arial,sans-serif">nova lib detectada</text>
+  <!-- row 3 y=556–618 text y=593 -->
+  <rect x="1118" y="556" width="364" height="62" rx="16" fill="#151A34" stroke="#283A79" stroke-width="1.5"/>
+  <text x="1156" y="593" fill="#FFFFFF" font-size="24" font-family="Segoe UI,Arial,sans-serif">risco detectado</text>
+
+  <!-- FOOTER CTA: y=756–820 text y=797 inside ✓ -->
+  <rect x="560" y="756" width="460" height="64" rx="22" fill="#10162F" stroke="#1BD9FF" stroke-width="2"/>
+  <text x="790" y="797" text-anchor="middle" fill="#FFFFFF" font-size="30" font-weight="700" font-family="Segoe UI,Arial,sans-serif">captura contínua</text>
+</svg>

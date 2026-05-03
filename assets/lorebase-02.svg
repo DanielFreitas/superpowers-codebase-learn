@@ -1,0 +1,77 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#041226"/><stop offset="0.6" stop-color="#080B28"/><stop offset="1" stop-color="#140B33"/>
+    </linearGradient>
+    <linearGradient id="title" x1="80" y1="0" x2="1100" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#12D7FF"/><stop offset="1" stop-color="#BF63FF"/>
+    </linearGradient>
+    <linearGradient id="stream" x1="530" y1="0" x2="1080" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#16D8FF"/><stop offset="1" stop-color="#B85EFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <!-- HEADER: title y=108 subtitle y=170 — content starts y=232 -->
+  <text x="80" y="108" fill="white" font-size="82" font-weight="800" font-family="Segoe UI,Arial,sans-serif">Bootstrap do contexto</text>
+  <text x="80" y="170" fill="url(#title)" font-size="40" font-weight="700" font-family="Segoe UI,Arial,sans-serif">Mapeie o repositório e gere a primeira memória técnica.</text>
+
+  <!-- COLUMN A: source files (x=80–530, y=232–820) -->
+  <rect x="80" y="232" width="450" height="588" rx="26" fill="#0B122C" stroke="#2A459D" stroke-width="2"/>
+  <rect x="80" y="232" width="450" height="58" rx="26" fill="#171F3D"/>
+  <circle cx="116" cy="261" r="9" fill="#6477AE"/>
+  <circle cx="144" cy="261" r="9" fill="#6477AE"/>
+  <circle cx="172" cy="261" r="9" fill="#6477AE"/>
+
+  <!-- file items (start y=308, step=72) text offset=36px from box top -->
+  <!-- docs/lorebase/  y=308–368 text y=344 -->
+  <rect x="116" y="308" width="248" height="60" rx="15" fill="#101934" stroke="#1FD9FF" stroke-width="2"/>
+  <text x="150" y="344" fill="#F7FBFF" font-size="24" font-weight="600" font-family="Segoe UI,Arial,sans-serif">docs/lorebase/</text>
+  <!-- src/  y=380–432 text y=412 -->
+  <rect x="116" y="380" width="240" height="52" rx="14" fill="#121A33" stroke="#2C3C7E" stroke-width="1.5"/>
+  <text x="152" y="412" fill="#CBD8FF" font-size="22" font-family="Segoe UI,Arial,sans-serif">src/</text>
+  <!-- tests/  y=444–496 text y=476 -->
+  <rect x="116" y="444" width="240" height="52" rx="14" fill="#121A33" stroke="#2C3C7E" stroke-width="1.5"/>
+  <text x="152" y="476" fill="#CBD8FF" font-size="22" font-family="Segoe UI,Arial,sans-serif">tests/</text>
+  <!-- scripts/  y=508–560 text y=540 -->
+  <rect x="116" y="508" width="240" height="52" rx="14" fill="#121A33" stroke="#2C3C7E" stroke-width="1.5"/>
+  <text x="152" y="540" fill="#CBD8FF" font-size="22" font-family="Segoe UI,Arial,sans-serif">scripts/</text>
+  <!-- config/  y=572–624 text y=604 -->
+  <rect x="116" y="572" width="240" height="52" rx="14" fill="#121A33" stroke="#2C3C7E" stroke-width="1.5"/>
+  <text x="152" y="604" fill="#CBD8FF" font-size="22" font-family="Segoe UI,Arial,sans-serif">config/</text>
+
+  <!-- CENTER: scanner circle cx=800 cy=528 — gap to col-A (x=530): 170px -->
+  <circle cx="800" cy="528" r="112" fill="#0D1D3B" stroke="#184A7C" stroke-width="2"/>
+  <circle cx="800" cy="528" r="78"  fill="#112146" stroke="#17D8FF" stroke-opacity="0.5" stroke-width="2"/>
+  <circle cx="800" cy="528" r="26"  fill="#14D8FF" fill-opacity="0.85"/>
+  <path d="M530 360C660 360 700 450 712 490" stroke="url(#stream)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M530 528C660 528 712 528 712 528" stroke="url(#stream)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M530 696C660 696 700 606 712 566" stroke="url(#stream)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M888 490C940 490 980 444 1080 440" stroke="url(#stream)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M888 528C940 528 980 530 1080 530" stroke="url(#stream)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M888 566C940 566 980 626 1080 636" stroke="url(#stream)" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- COLUMN C: output docs (x=1080–1520) — gap to circle: 168px -->
+  <!-- header label y=232–288 text y=268 -->
+  <rect x="1080" y="232" width="320" height="56" rx="16" fill="#10162F" stroke="#17D8FF" stroke-width="2"/>
+  <text x="1120" y="268" fill="#38E1FF" font-size="28" font-weight="700" font-family="Segoe UI,Arial,sans-serif">docs/lorebase/</text>
+  <!-- STACK  y=304–372 (h=68) text y=344 -->
+  <rect x="1080" y="304" width="440" height="68" rx="18" fill="#131731" stroke="#785DFF" stroke-width="1.8"/>
+  <text x="1124" y="344" fill="#FFFFFF" font-size="26" font-weight="700" font-family="Segoe UI,Arial,sans-serif">STACK.md</text>
+  <!-- STRUCTURE  y=388–456 text y=428 -->
+  <rect x="1080" y="388" width="440" height="68" rx="18" fill="#131731" stroke="#785DFF" stroke-width="1.8"/>
+  <text x="1124" y="428" fill="#FFFFFF" font-size="26" font-weight="700" font-family="Segoe UI,Arial,sans-serif">STRUCTURE.md</text>
+  <!-- ARCHITECTURE  y=472–540 text y=512 -->
+  <rect x="1080" y="472" width="440" height="68" rx="18" fill="#131731" stroke="#785DFF" stroke-width="1.8"/>
+  <text x="1124" y="512" fill="#FFFFFF" font-size="26" font-weight="700" font-family="Segoe UI,Arial,sans-serif">ARCHITECTURE.md</text>
+  <!-- CONVENTIONS  y=556–624 text y=596 -->
+  <rect x="1080" y="556" width="440" height="68" rx="18" fill="#131731" stroke="#785DFF" stroke-width="1.8"/>
+  <text x="1124" y="596" fill="#FFFFFF" font-size="26" font-weight="700" font-family="Segoe UI,Arial,sans-serif">CONVENTIONS.md</text>
+  <!-- TESTING  y=640–708 text y=680 -->
+  <rect x="1080" y="640" width="440" height="68" rx="18" fill="#131731" stroke="#785DFF" stroke-width="1.8"/>
+  <text x="1124" y="680" fill="#FFFFFF" font-size="26" font-weight="700" font-family="Segoe UI,Arial,sans-serif">TESTING.md</text>
+
+  <!-- FOOTER CTA: y=754–820 text y=797 inside ✓ -->
+  <rect x="554" y="754" width="494" height="66" rx="22" fill="#10162F" stroke="#1BD9FF" stroke-width="2"/>
+  <text x="801" y="797" text-anchor="middle" fill="#FFFFFF" font-size="32" font-weight="700" font-family="Segoe UI,Arial,sans-serif">/learn-discovery</text>
+</svg>

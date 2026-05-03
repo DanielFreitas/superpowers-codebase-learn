@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+# pre-commit hook — bloqueia commits com possíveis secrets
+# Instalado automaticamente pelo install.sh
+
+set -euo pipefail
+
+# Padrões de secrets comuns
+# Nota: padrões que precisam de aspas simples usam $'...' para portabilidade
+# (evita dependência de \x27 que não é suportado por todas as implementações de grep)
+PATTERNS=(
+  'AKIA[0-9A-Z]{16}'                              # AWS Access Key
+  'AIza[0-9A-Za-z\-_]{35}'                        # Google API Key
+  'sk-[a-zA-Z0-9]{20,}'                           # OpenAI / Stripe secret key
+  'ghp_[a-zA-Z0-9]{36}'                           # GitHub personal access token
+  'gho_[a-zA-Z0-9]{36}'                           # GitHub OAuth token
+  'xox[baprs]-[0-9a-zA-Z]{10,48}'                # Slack token
+  'SG\.[a-zA-Z0-9]{22}\.[a-zA-Z0-9]{43}'        # SendGrid API key
+  $'password\\s*=\\s*["\'][^"\']{4,}'             # password = "..." or '...'
+  $'secret\\s*=\\s*["\'][^"\']{4,}'               # secret = "..." or '...'
+  $'token\\s*=\\s*["\'][^"\']{8,}'                # token = "..." or '...'
+  $'api_key\\s*=\\s*["\'][^"\']{8,}'              # api_key = "..." or '...'
+)
+
+STAGED_FILES=$(git diff --cached --name-only --diff-filter=ACM 2>/dev/null || true)
+
+if [[ -z "$STAGED_FILES" ]]; then
+  exit 0
+fi
+
+FOUND=0
+
+for FILE in $STAGED_FILES; do
+  [[ ! -f "$FILE" ]] && continue
+
+  for PATTERN in "${PATTERNS[@]}"; do
+    if git show ":$FILE" 2>/dev/null | grep -qEi "$PATTERN"; then
+      echo ""
+      echo "🚨 BLOQUEADO: possível secret detectado em '$FILE'"
+      echo "   Padrão: $PATTERN"
+      echo ""
+      FOUND=1
+    fi
+  done
+done
+
+if [[ "$FOUND" -eq 1 ]]; then
+  echo "Commit bloqueado. Revise os arquivos acima antes de commitar."
+  echo "Para ignorar este check (use com cuidado): git commit --no-verify"
+  echo ""
+  exit 1
+fi
+
+exit 0

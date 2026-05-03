@@ -1,0 +1,64 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#041226"/><stop offset="0.6" stop-color="#080B28"/><stop offset="1" stop-color="#140B33"/>
+    </linearGradient>
+    <linearGradient id="headline" x1="80" y1="0" x2="1100" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#14D8FF"/><stop offset="1" stop-color="#BB60FF"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#17D8FF"/><stop offset="1" stop-color="#B65FFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <!-- HEADER: title y=108 subtitle y=166 — content starts y=230 -->
+  <text x="80" y="108" fill="url(#headline)" font-size="82" font-weight="800" font-family="Segoe UI,Arial,sans-serif">Contexto sempre fresco.</text>
+  <text x="80" y="166" fill="#F2F6FF" font-size="38" font-family="Segoe UI,Arial,sans-serif">Projeto, agente e docs evoluem no mesmo ciclo.</text>
+
+  <!-- CENTER: Lorebase circle cx=800 cy=470 r=170 -->
+  <circle cx="800" cy="470" r="170" stroke="url(#ring)" stroke-width="5"/>
+  <circle cx="800" cy="470" r="104" fill="#12162F" stroke="#7F63FF" stroke-width="6"/>
+  <!-- Lorebase label inside inner circle y=481 (center+11) -->
+  <text x="800" y="481" text-anchor="middle" fill="#FFFFFF" font-size="40" font-weight="700" font-family="Segoe UI,Arial,sans-serif">Lorebase</text>
+
+  <!-- TOP-LEFT box: x=80–400 y=248–358 (h=110) — gap to subtitle bottom (166+8=174): 74px ✓ -->
+  <rect x="80" y="248" width="320" height="110" rx="26" fill="#10162F" stroke="#1BD9FF" stroke-width="2"/>
+  <text x="240" y="312" text-anchor="middle" fill="#FFFFFF" font-size="32" font-weight="700" font-family="Segoe UI,Arial,sans-serif">Projeto</text>
+
+  <!-- TOP-RIGHT box: x=1200–1520 y=248–358 -->
+  <rect x="1200" y="248" width="320" height="110" rx="26" fill="#141630" stroke="#8A5DFF" stroke-width="2"/>
+  <text x="1360" y="312" text-anchor="middle" fill="#FFFFFF" font-size="32" font-weight="700" font-family="Segoe UI,Arial,sans-serif">Agente</text>
+
+  <!-- BOTTOM-LEFT box: x=80–400 y=582–692 (h=110) — circle bottom=470+170=640, boxes start 582 ✓ no horiz overlap -->
+  <rect x="80" y="582" width="320" height="110" rx="26" fill="#10162F" stroke="#1BD9FF" stroke-width="2"/>
+  <text x="240" y="644" text-anchor="middle" fill="#FFFFFF" font-size="30" font-weight="700" font-family="Segoe UI,Arial,sans-serif">Decisões vivas</text>
+
+  <!-- BOTTOM-RIGHT box: x=1200–1520 y=582–692 -->
+  <rect x="1200" y="582" width="320" height="110" rx="26" fill="#141630" stroke="#8A5DFF" stroke-width="2"/>
+  <text x="1360" y="636" text-anchor="middle" fill="#FFFFFF" font-size="29" font-weight="700" font-family="Segoe UI,Arial,sans-serif">docs/lorebase</text>
+
+  <!-- Arrows corners → circle -->
+  <path d="M400 303C500 303 620 340 630 370" stroke="url(#ring)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M1200 303C1100 303 980 340 970 370" stroke="url(#ring)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M400 637C500 637 620 610 630 580" stroke="url(#ring)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M1200 637C1100 637 980 610 970 580" stroke="url(#ring)" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- BOTTOM 3 cards: y=730–830 (h=100) — gap from bottom boxes (692)=38px ✓ -->
+  <!-- left: x=80–472 -->
+  <rect x="80" y="730" width="392" height="100" rx="24" fill="#10162F" stroke="#1BD9FF" stroke-width="2"/>
+  <text x="276" y="786" text-anchor="middle" fill="#FFFFFF" font-size="28" font-weight="700" font-family="Segoe UI,Arial,sans-serif">menos alucinação</text>
+
+  <!-- center: x=604–996 -->
+  <rect x="604" y="730" width="392" height="100" rx="24" fill="#12162F" stroke="#8A5DFF" stroke-width="2"/>
+  <text x="800" y="778" text-anchor="middle" fill="#FFFFFF" font-size="28" font-weight="700" font-family="Segoe UI,Arial,sans-serif">mais assertividade</text>
+  <!-- subtext lines y=806 y=824 — box bottom=830 ✓ -->
+  <text x="800" y="806" text-anchor="middle" fill="#C7D6FF" font-size="18" font-family="Segoe UI,Arial,sans-serif">engenharia + IA</text>
+  <text x="800" y="824" text-anchor="middle" fill="#C7D6FF" font-size="18" font-family="Segoe UI,Arial,sans-serif">com o mesmo contexto</text>
+
+  <!-- right: x=1128–1520 -->
+  <rect x="1128" y="730" width="392" height="100" rx="24" fill="#10162F" stroke="#1BD9FF" stroke-width="2"/>
+  <text x="1324" y="778" text-anchor="middle" fill="#FFFFFF" font-size="26" font-weight="700" font-family="Segoe UI,Arial,sans-serif">memória técnica viva</text>
+  <text x="1324" y="806" text-anchor="middle" fill="#C7D6FF" font-size="18" font-family="Segoe UI,Arial,sans-serif">pronta para a</text>
+  <text x="1324" y="824" text-anchor="middle" fill="#C7D6FF" font-size="18" font-family="Segoe UI,Arial,sans-serif">próxima sprint</text>
+</svg>

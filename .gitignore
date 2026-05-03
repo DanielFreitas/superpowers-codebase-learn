@@ -1,0 +1,11 @@
+dist/
+node_modules/
+
+# Artefatos de processo (planejamento, specs)
+docs/superpowers/
+
+# Artefatos de execução de testes
+vitest-output.txt
+vitest-results.json
+vitest_out.txt
+test_output.txt

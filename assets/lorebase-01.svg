@@ -1,0 +1,83 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#041226"/><stop offset="0.55" stop-color="#090B26"/><stop offset="1" stop-color="#140B33"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(300 700) scale(500 300)">
+      <stop stop-color="#0AD8FF" stop-opacity="0.18"/><stop offset="1" stop-color="#0AD8FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1350 200) scale(400 280)">
+      <stop stop-color="#B04CFF" stop-opacity="0.20"/><stop offset="1" stop-color="#B04CFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="brand" x1="80" y1="0" x2="900" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#12D7FF"/><stop offset="1" stop-color="#BF63FF"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#17D8FF"/><stop offset="1" stop-color="#B956FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#glowA)"/>
+  <rect width="1600" height="900" fill="url(#glowB)"/>
+
+  <!-- HEADER: title baseline=110, subtitle baseline=175 -->
+  <text x="80" y="110" fill="white" font-size="88" font-weight="800" font-family="Segoe UI,Arial,sans-serif">Lorebase</text>
+  <text x="80" y="175" fill="url(#brand)" font-size="42" font-weight="700" font-family="Segoe UI,Arial,sans-serif">Memória viva do seu codebase.</text>
+
+  <!-- COLUMN A: file tree panel (x=80–540, y=228–732) -->
+  <rect x="80" y="228" width="460" height="504" rx="26" fill="#0B122C" stroke="#2E4FB6" stroke-opacity="0.55" stroke-width="2"/>
+  <rect x="80" y="228" width="460" height="56" rx="26" fill="#161D3C"/>
+  <circle cx="116" cy="256" r="9" fill="#6173A8"/>
+  <circle cx="144" cy="256" r="9" fill="#6173A8"/>
+  <circle cx="172" cy="256" r="9" fill="#6173A8"/>
+
+  <!-- item .github/   box y=296–354 text y=332 cap-top=313 -->
+  <rect x="116" y="296" width="190" height="58" rx="14" fill="#101934" stroke="#1FD9FF" stroke-width="2"/>
+  <text x="150" y="332" fill="#F7FBFF" font-size="26" font-weight="600" font-family="Segoe UI,Arial,sans-serif">.github/</text>
+  <!-- item docs/lorebase/  box y=368–426 text y=404 -->
+  <rect x="116" y="368" width="250" height="58" rx="14" fill="#101934" stroke="#1FD9FF" stroke-width="2"/>
+  <text x="150" y="404" fill="#F7FBFF" font-size="26" font-weight="600" font-family="Segoe UI,Arial,sans-serif">docs/lorebase/</text>
+  <!-- item STACK.md  y=440–490 text y=471 -->
+  <rect x="116" y="440" width="192" height="50" rx="12" fill="#131A33" stroke="#2C3C7E" stroke-width="1.5"/>
+  <text x="150" y="471" fill="#C7D6FF" font-size="22" font-family="Segoe UI,Arial,sans-serif">STACK.md</text>
+  <!-- item ARCHITECTURE.md  y=504–554 text y=535 -->
+  <rect x="116" y="504" width="258" height="50" rx="12" fill="#131A33" stroke="#2C3C7E" stroke-width="1.5"/>
+  <text x="150" y="535" fill="#C7D6FF" font-size="22" font-family="Segoe UI,Arial,sans-serif">ARCHITECTURE.md</text>
+  <!-- item CONVENTIONS.md  y=568–618 text y=599 -->
+  <rect x="116" y="568" width="240" height="50" rx="12" fill="#131A33" stroke="#2C3C7E" stroke-width="1.5"/>
+  <text x="150" y="599" fill="#C7D6FF" font-size="22" font-family="Segoe UI,Arial,sans-serif">CONVENTIONS.md</text>
+  <!-- item INTEGRATIONS.md  y=632–682 text y=663 -->
+  <rect x="116" y="632" width="240" height="50" rx="12" fill="#131A33" stroke="#2C3C7E" stroke-width="1.5"/>
+  <text x="150" y="663" fill="#C7D6FF" font-size="22" font-family="Segoe UI,Arial,sans-serif">INTEGRATIONS.md</text>
+
+  <!-- CENTER: agent circle cx=820 cy=522 r=92 — gap to col-A (x=540): 240px -->
+  <path d="M540 380C640 380 720 450 728 490" stroke="url(#line)" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+  <path d="M540 522C660 522 720 522 728 522" stroke="url(#line)" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+  <path d="M540 656C640 656 720 590 728 554" stroke="url(#line)" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+  <circle cx="820" cy="522" r="92"  fill="#11162D" stroke="#7F63FF" stroke-width="6"/>
+  <circle cx="820" cy="522" r="116" stroke="#1BD8FF" stroke-opacity="0.14" stroke-width="2"/>
+  <circle cx="796" cy="516" r="13" fill="#4CE2FF"/>
+  <circle cx="844" cy="516" r="13" fill="#4CE2FF"/>
+  <rect x="804" y="556" width="72" height="10" rx="5" fill="#A45FFF"/>
+  <path d="M912 490C970 490 1000 444 1040 434" stroke="url(#line)" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+  <path d="M912 522C970 522 1000 524 1040 524" stroke="url(#line)" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+  <path d="M912 554C970 554 1000 614 1040 624" stroke="url(#line)" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- COLUMN C: benefit cards (x=1040–1520) — gap to circle: 128px -->
+  <!-- card 1: y=390–482 (h=92) text1 y=430 text2 y=460 — inside box ✓ -->
+  <rect x="1040" y="390" width="480" height="92" rx="22" fill="#141630" stroke="#4E56FF" stroke-width="1.8"/>
+  <text x="1080" y="430" fill="#F7FAFF" font-size="24" font-weight="600" font-family="Segoe UI,Arial,sans-serif">Arquitetura</text>
+  <text x="1080" y="460" fill="#69E4FF" font-size="21" font-family="Segoe UI,Arial,sans-serif">entendida pelo agente</text>
+  <!-- card 2: y=506–598 text1 y=546 text2 y=576 -->
+  <rect x="1040" y="506" width="480" height="92" rx="22" fill="#141630" stroke="#8C56FF" stroke-width="1.8"/>
+  <text x="1080" y="546" fill="#F7FAFF" font-size="24" font-weight="600" font-family="Segoe UI,Arial,sans-serif">Padrões</text>
+  <text x="1080" y="576" fill="#69E4FF" font-size="21" font-family="Segoe UI,Arial,sans-serif">consistentes e verificados</text>
+  <!-- card 3: y=622–714 text1 y=662 text2 y=692 -->
+  <rect x="1040" y="622" width="480" height="92" rx="22" fill="#141630" stroke="#4E56FF" stroke-width="1.8"/>
+  <text x="1080" y="662" fill="#F7FAFF" font-size="24" font-weight="600" font-family="Segoe UI,Arial,sans-serif">APIs e fluxos</text>
+  <text x="1080" y="692" fill="#69E4FF" font-size="21" font-family="Segoe UI,Arial,sans-serif">com contexto sempre fresco</text>
+
+  <!-- FOOTER CTA: y=754–828 gap from panels=22px text y=801 inside box ✓ -->
+  <rect x="360" y="754" width="880" height="74" rx="26" fill="#10162F" stroke="url(#line)" stroke-width="2"/>
+  <text x="800" y="801" text-anchor="middle" fill="#FFFFFF" font-size="36" font-weight="700" font-family="Segoe UI,Arial,sans-serif">O agente entende seu projeto.</text>
+</svg>

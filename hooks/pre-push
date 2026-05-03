@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+# pre-push hook — avisa ao tentar push direto em main/master
+# Instalado automaticamente pelo install.sh
+
+set -euo pipefail
+
+PROTECTED_BRANCHES=("main" "master")
+CURRENT_BRANCH=$(git symbolic-ref --short HEAD 2>/dev/null || echo "")
+
+for BRANCH in "${PROTECTED_BRANCHES[@]}"; do
+  if [[ "$CURRENT_BRANCH" == "$BRANCH" ]]; then
+    echo ""
+    echo "⚠️  Atenção: você está prestes a fazer push direto em '$BRANCH'."
+    echo ""
+    echo "   Branch protegida. Confirme que isso é intencional."
+    echo "   Digite 'sim' para continuar ou qualquer outra coisa para cancelar:"
+    echo ""
+
+    # Lê do tty para não bloquear pipe do git
+    exec < /dev/tty
+    read -r RESPOSTA
+
+    if [[ "$RESPOSTA" != "sim" ]]; then
+      echo ""
+      echo "Push cancelado. Crie uma branch e abra um PR."
+      echo ""
+      exit 1
+    fi
+
+    echo ""
+    echo "Push em '$BRANCH' confirmado."
+    echo ""
+    break
+  fi
+done
+
+exit 0

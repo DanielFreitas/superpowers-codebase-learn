@@ -1,0 +1,86 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#041226"/><stop offset="0.6" stop-color="#080B28"/><stop offset="1" stop-color="#140B33"/>
+    </linearGradient>
+    <linearGradient id="headline" x1="80" y1="0" x2="1100" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#14D8FF"/><stop offset="1" stop-color="#BB60FF"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#17D8FF"/><stop offset="1" stop-color="#B65FFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <!-- HEADER: title y=108 subtitle y=168 — content starts y=230 -->
+  <text x="80" y="108" fill="white" font-size="80" font-weight="800" font-family="Segoe UI,Arial,sans-serif">Memória sincronizada.</text>
+  <text x="80" y="168" fill="url(#headline)" font-size="38" font-weight="700" font-family="Segoe UI,Arial,sans-serif">Os sinais viram documentação validada e versionada.</text>
+
+  <!-- COLUMN A: inbox panel (x=80–500, y=230–800) -->
+  <rect x="80" y="230" width="420" height="570" rx="28" fill="#0B122C" stroke="#2A459D" stroke-width="2"/>
+  <rect x="80" y="230" width="420" height="56" rx="28" fill="#171F3D"/>
+  <circle cx="116" cy="258" r="9" fill="#6477AE"/>
+  <circle cx="144" cy="258" r="9" fill="#6477AE"/>
+  <circle cx="172" cy="258" r="9" fill="#6477AE"/>
+  <!-- inbox title y=308 (52px gap from window-bar bottom 286) cap-top=285 ✓ -->
+  <text x="118" y="308" fill="#FFFFFF" font-size="30" font-weight="700" font-family="Segoe UI,Arial,sans-serif">inbox.md</text>
+  <!-- row 1 y=326–418 (h=92) tspan1=362 tspan2=388 -->
+  <rect x="118" y="326" width="344" height="92" rx="18" fill="#111731" stroke="#2D3E82" stroke-width="1.5"/>
+  <text x="150" y="362" fill="#FFFFFF" font-size="20" font-family="Segoe UI,Arial,sans-serif">Nova convenção</text>
+  <text x="150" y="390" fill="#FFFFFF" font-size="20" font-family="Segoe UI,Arial,sans-serif">registrada</text>
+  <!-- row 2 y=428–520 tspan1=464 tspan2=490 -->
+  <rect x="118" y="428" width="344" height="92" rx="18" fill="#111731" stroke="#2D3E82" stroke-width="1.5"/>
+  <text x="150" y="464" fill="#FFFFFF" font-size="20" font-family="Segoe UI,Arial,sans-serif">Nova integração</text>
+  <text x="150" y="492" fill="#FFFFFF" font-size="20" font-family="Segoe UI,Arial,sans-serif">encontrada</text>
+  <!-- row 3 y=530–622 tspan1=566 tspan2=592 -->
+  <rect x="118" y="530" width="344" height="92" rx="18" fill="#111731" stroke="#2D3E82" stroke-width="1.5"/>
+  <text x="150" y="566" fill="#FFFFFF" font-size="20" font-family="Segoe UI,Arial,sans-serif">Padrão de teste</text>
+  <text x="150" y="594" fill="#FFFFFF" font-size="20" font-family="Segoe UI,Arial,sans-serif">atualizado</text>
+
+  <!-- CENTER: validation circle cx=800 cy=510 r=108 — gap to col-A (x=500): 192px -->
+  <circle cx="800" cy="510" r="108" fill="#11162D" stroke="#7F63FF" stroke-width="6"/>
+  <circle cx="800" cy="510" r="136" stroke="#1BD8FF" stroke-opacity="0.14" stroke-width="2"/>
+  <!-- checkmark inside circle -->
+  <path d="M752 510L784 542L852 474" stroke="#93EDFF" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- revisar button y=248–308 (h=60) text y=284 -->
+  <rect x="700" y="248" width="200" height="60" rx="22" fill="#10162F" stroke="#7F63FF" stroke-width="2"/>
+  <text x="800" y="284" text-anchor="middle" fill="#FFFFFF" font-size="28" font-weight="700" font-family="Segoe UI,Arial,sans-serif">revisar</text>
+  <!-- validation steps box y=644–784 (h=140) texts y=682 y=718 y=754 -->
+  <rect x="648" y="644" width="304" height="140" rx="22" fill="#11162F" stroke="#283A79" stroke-width="1.5"/>
+  <text x="680" y="682" fill="#FFFFFF" font-size="22" font-family="Segoe UI,Arial,sans-serif">cruzar com código</text>
+  <text x="680" y="718" fill="#FFFFFF" font-size="22" font-family="Segoe UI,Arial,sans-serif">validar consistência</text>
+  <text x="680" y="754" fill="#FFFFFF" font-size="22" font-family="Segoe UI,Arial,sans-serif">garantir segurança</text>
+  <!-- connectors left to center -->
+  <path d="M500 418C612 418 666 476 692 494" stroke="url(#beam)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M500 510C612 510 668 510 692 510" stroke="url(#beam)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M500 600C612 600 666 544 692 526" stroke="url(#beam)" stroke-width="4" stroke-linecap="round"/>
+  <!-- connectors center to right -->
+  <path d="M908 478C1000 478 1060 430 1100 426" stroke="url(#beam)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M908 510C1000 510 1060 510 1100 510" stroke="url(#beam)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M908 542C1000 542 1060 590 1100 598" stroke="url(#beam)" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- COLUMN C: docs panel (x=1100–1520, y=230–800) — gap to circle: 184px -->
+  <rect x="1100" y="230" width="420" height="570" rx="28" fill="#12162F" stroke="#905CFF" stroke-width="2"/>
+  <rect x="1100" y="230" width="420" height="56" rx="28" fill="#1A1C3C"/>
+  <circle cx="1136" cy="258" r="9" fill="#6477AE"/>
+  <circle cx="1164" cy="258" r="9" fill="#6477AE"/>
+  <circle cx="1192" cy="258" r="9" fill="#6477AE"/>
+  <!-- docs title y=308 -->
+  <text x="1138" y="308" fill="#FFFFFF" font-size="28" font-weight="700" font-family="Segoe UI,Arial,sans-serif">docs/lorebase/</text>
+  <!-- row ARCH y=326–418 texts y=362 y=390 -->
+  <rect x="1138" y="326" width="344" height="92" rx="18" fill="#151A34" stroke="#283A79" stroke-width="1.5"/>
+  <text x="1170" y="362" fill="#FFFFFF" font-size="20" font-family="Segoe UI,Arial,sans-serif">ARCHITECTURE.md</text>
+  <text x="1170" y="390" fill="#4DF1B4" font-size="20" font-weight="700" font-family="Segoe UI,Arial,sans-serif">atualizado</text>
+  <!-- row INTEGR y=428–520 texts y=464 y=492 -->
+  <rect x="1138" y="428" width="344" height="92" rx="18" fill="#151A34" stroke="#283A79" stroke-width="1.5"/>
+  <text x="1170" y="464" fill="#FFFFFF" font-size="20" font-family="Segoe UI,Arial,sans-serif">INTEGRATIONS.md</text>
+  <text x="1170" y="492" fill="#4DF1B4" font-size="20" font-weight="700" font-family="Segoe UI,Arial,sans-serif">atualizado</text>
+  <!-- row CHANGELOG y=530–634 (h=104) texts y=572 y=604 -->
+  <rect x="1138" y="530" width="344" height="104" rx="18" fill="#151A34" stroke="#283A79" stroke-width="1.5"/>
+  <text x="1170" y="572" fill="#FFFFFF" font-size="22" font-family="Segoe UI,Arial,sans-serif">changelog.md</text>
+  <text x="1170" y="604" fill="#C6D5FF" font-size="20" font-family="Segoe UI,Arial,sans-serif">registro das mudanças</text>
+
+  <!-- FOOTER CTA: y=820–866 (h=46) gap from panels (800)=20px text y=851 -->
+  <rect x="636" y="820" width="328" height="46" rx="18" fill="#10162F" stroke="#1BD9FF" stroke-width="2"/>
+  <text x="800" y="851" text-anchor="middle" fill="#FFFFFF" font-size="26" font-weight="700" font-family="Segoe UI,Arial,sans-serif">/learn-update</text>
+</svg>
